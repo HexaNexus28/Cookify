@@ -1,0 +1,7 @@
+pour la partie multi :
+choses à faire :
+-quand le joueur crée la partie, un code est généré, son id (utilisateur) est enregistré dans la bdd
+-il est ensuite renvoyé vers la page d'attente avec le code affiché et les pseudo des joueurs qui ont entrés ce code
+(puis il ya le bouton de commencer la partie / on peux aussi décider de rediriger la page dès qu'il ya 5 joueurs )
+
+-ensuite il ya les question qui s'affichent avec un timer, celui qui clique le plus rapidement possible a le plus de point, après chaque question il ya une page qui affichent les score de tous les joueurs puis une attente de quelques seconde pour la seconde page jusqu'à ce que la serie de question soit finie .

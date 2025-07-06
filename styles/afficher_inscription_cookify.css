@@ -1,0 +1,98 @@
+/* Styles généraux */
+body {
+    background-image: url("../images/img_deux.jpg");
+    background-color: var(--background-color, #f4f4f4);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Pour éviter le défilement horizontal */
+}
+
+/* Conteneur du formulaire */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    z-index: 1; /* Pour s'assurer que le formulaire est au-dessus des fruits */
+}
+
+.form-container:hover {
+    transform: scale(1.03);
+}
+
+/* Titre */
+.form-container h1 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Labels */
+.form-container p {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Champs de saisie */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 14px;
+}
+
+.form-container input:focus {
+    border-color: #00ff00; /* Vert */
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); /* Vert */
+    outline: none;
+}
+
+/* Bouton S'inscrire */
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00ff00; /* Vert */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #00b300; /* Vert foncé */
+}
+
+/* Ajouter des icônes (facultatif) */
+.form-container input[type="text"]::before,
+.form-container input[type="email"]::before,
+.form-container input[type="password"]::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}

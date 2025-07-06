@@ -1,0 +1,114 @@
+/* Corps de la page */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #d4fc79, #96e6a1);
+  /* Dégradé doux vert-bleu */
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Texte principal */
+p {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+/* Code de session */
+p.code {
+  font-size: 2rem;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.3);
+  /* Fond transparent */
+  padding: 10px 20px;
+  border-radius: 15px;
+  display: inline-block;
+  animation: glow 2s infinite ease-in-out;
+}
+
+/* Animation lumineuse */
+@keyframes glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
+}
+
+/* Liste des joueurs */
+.players {
+  margin-top: 2rem;
+}
+
+.players p {
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.3);
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 5px;
+  display: inline-block;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.players p:hover {
+  transform: scale(1.05);
+}
+
+/* Loader (indicateur de chargement) */
+.loader {
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top: 6px solid #72efdd;
+  /* Vert pastel doux */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-top: 20px;
+}
+
+/* Animation du spinner */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Bouton Commencer la partie */
+.start-game form {
+  margin-top: 20px;
+}
+
+.start-game button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #56cfe1, #72efdd);
+  /* Dégradé bleu pastel */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-game button:hover {
+  background: linear-gradient(135deg, #72efdd, #56cfe1);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

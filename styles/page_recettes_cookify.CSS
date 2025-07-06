@@ -1,0 +1,173 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    margin-top: -30px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo form {
+    margin: 0;
+}
+
+.btn-img-logo {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-img-logo img {
+    width: 100px;
+}
+
+.nav-list {
+    flex: 2;
+    text-align: center;
+}
+
+.nav-list nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list nav ul li {
+    margin: 0 15px;
+}
+
+.nav-list nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.connexion {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.connexion p {
+    margin: 0 10px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.connexion p span {
+    margin-left: 10px;
+}
+
+.connexion form {
+    display: inline;
+}
+
+.connexion button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 60px;
+}
+
+.connexion button:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour le conteneur des recettes */
+.recette-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Style pour chaque élément de recette */
+.recette-item {
+    flex: 1 1 calc(33.333% - 20px);
+    /* Ajuster la largeur pour 3 éléments par ligne */
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.recette-item form {
+    margin: 0;
+}
+
+.recette-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recette-item button:hover {
+    transform: scale(1.05);
+}
+
+.recette-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.recette-nom {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.recette-description {
+    font-size: 1em;
+    margin: 0;
+    color: #555;
+}
+
+/* Style pour le lien de retour */
+.retour {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.retour:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    text-align: center;
+    background: linear-gradient(to right, rgba(0, 128, 0, 0.7), rgba(64, 224, 208, 0.7));
+    /* Dégradé vert à turquoise avec transparence */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: -14px;
+}

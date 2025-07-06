@@ -1,0 +1,120 @@
+/* Corps de la page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  /* Doux bleu-rose pastel */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Conteneur principal */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  /* Blanc semi-transparent */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Titre */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #444;
+  /* Gris foncé pour rester doux */
+}
+
+/* Messages d'erreur */
+.error-message {
+  color: #e63946;
+  /* Rouge subtil */
+  background: rgba(230, 57, 70, 0.2);
+  /* Rouge clair transparent */
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Formulaire */
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-text {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 2px solid #a8c0c0;
+  /* Bordure pastel douce */
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  /* Fond clair */
+  color: #333;
+  /* Texte sombre */
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-text:focus {
+  border-color: #56cfe1;
+  /* Bleu clair au focus */
+  background: #e8f9f9;
+  /* Fond doux au focus */
+}
+
+/* Bouton */
+.submit-btn {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #56cfe1, #72efdd);
+  /* Dégradé bleu-vert pastel */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #72efdd, #56cfe1);
+  transform: scale(1.05);
+}
+
+/* Code de session */
+.session-info {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  color: #444;
+  /* Texte sombre */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

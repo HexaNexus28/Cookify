@@ -1,0 +1,43 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ingredients, .instructions, .notes {
+    margin-bottom: 20px;
+}
+
+.ingredients h2, .instructions h2, .notes h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.ingredients ul, .instructions ol, .notes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredients li, .instructions li, .notes li {
+    margin-bottom: 10px;
+}
+
+.instructions li {
+    margin-left: 20px;
+}

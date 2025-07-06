@@ -1,0 +1,301 @@
+/* 🌍 Variables globales */
+:root {
+  --primary-color: #008080;
+  --secondary-color: #006666;
+  --background-color: #e0f7fa;
+  --text-color: #333;
+  --hover-color: #005959;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --border-radius: 10px;
+  --transition-speed: 0.3s;
+}
+
+/* 🌐 Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 10px 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 60px;
+  transition: transform var(--transition-speed);
+}
+
+/* Rotation raffinée sur le logo */
+.logo img:hover {
+  transform: rotate(360deg) scale(1.1);
+}
+
+/* 📋 Navigation */
+.nav-list {
+  flex: 2;
+  text-align: center;
+}
+
+.nav-list nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-list nav ul li {
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+  transition: transform var(--transition-speed);
+}
+
+.nav-list nav ul li:hover {
+  transform: scale(1.1);
+}
+
+.nav-list nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color var(--transition-speed);
+}
+
+.nav-list nav ul li a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+/* 🔑 Connexion */
+.connexion {
+  display: flex;
+  align-items: center;
+}
+
+.connexion p {
+  margin: 0 10px;
+  font-weight: bold;
+  color: black;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.connexion p:hover {
+  background-color: rgba(58, 62, 62, 0.151);
+}
+
+.connexion button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 23px;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.connexion button:hover {
+  background-color: white;
+  border: 1px solid var(--hover-color);
+  color: var(--text-color);
+  transform: scale(1.05);
+  box-shadow: var(--box-shadow);
+}
+
+/* 📖 Main Content */
+.main-content {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 🔍 Barre de recherche */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  flex: 1;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+form button:hover {
+  background-color: var(--hover-color);
+}
+
+/* 📚 Affichage du livre */
+.book-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 📘 Un seul livre avec animation flottante */
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  animation: float 3s ease-in-out infinite;
+}
+
+.book:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼 Image du livre */
+.book .image img {
+  width: 250px;
+  /* Taille ajustée */
+  height: auto;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed);
+}
+
+.book .image img:hover {
+  transform: scale(1.05);
+}
+
+/* 📝 Détails du livre */
+.book .details {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.book .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  /* Animation de surbrillance */
+  animation: highlight 2s infinite alternate;
+}
+
+/* 📥 Bouton de téléchargement avec effet pulse */
+.download-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  transition: background-color var(--transition-speed);
+  animation: pulse 1.5s infinite;
+}
+
+.download-link:hover {
+  background-color: #0056b3;
+}
+
+/* ⚡ Bouton d'action */
+.action-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6b6b;
+  color: white;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.action-btn:hover {
+  background-color: #e63946;
+}
+
+/* 🔙 Retour */
+.retour {
+  margin-top: 20px;
+}
+
+.retour a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color var(--transition-speed);
+}
+
+.retour a:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
+
+/* 🎩 Animations Complexes */
+
+/* Animation flottante pour le livre */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animation de surbrillance pour le titre */
+@keyframes highlight {
+  from {
+    text-shadow: 0 0 5px var(--primary-color);
+  }
+
+  to {
+    text-shadow: 0 0 20px var(--primary-color);
+  }
+}
+
+/* Animation pulse pour le bouton download */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

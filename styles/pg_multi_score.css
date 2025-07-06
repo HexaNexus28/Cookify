@@ -1,0 +1,146 @@
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Tableau des scores */
+table {
+  width: 80%;
+  margin: 0 auto 30px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td {
+  font-size: 1.1em;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 80%;
+  margin: 0 auto 20px;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+  position: relative;
+}
+
+.progress-bar-inner {
+  width: 0%;
+  /* Animation fix */
+  height: 100%;
+  background: #4CAF50;
+  transition: width 1s ease-in-out;
+}
+
+/* Progression des badges */
+.badge-progress {
+  margin: 30px auto;
+  width: 80%;
+}
+
+.progress-bar1 {
+  width: 100%;
+  background: #ddd;
+  border-radius: 20px;
+  height: 10px;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress1 {
+  height: 100%;
+  background: #FF9800;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+/* Section des badges */
+.badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.badge {
+  text-align: center;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.badge img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.badge p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.badge strong {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  .badges-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .badge {
+    width: 80%;
+  }
+}

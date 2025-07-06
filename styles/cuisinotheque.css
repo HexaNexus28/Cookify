@@ -1,0 +1,239 @@
+:root {
+    --primary-color: #008080;
+    --secondary-color: #006666;
+    --background-color: #e0f7fa;
+    --text-color: #333;
+    --hover-color: #005959;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 10px;
+    --transition-speed: 0.3s;
+}
+
+/* 🌐 Header avec gradient animé */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, var(--background-color), var(--primary-color));
+    background-size: 200% 200%;
+    padding: 10px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-position 0.5s ease;
+}
+
+.header:hover {
+    background-position: right center;
+}
+
+.logo img {
+    width: 60px;
+    transition: transform var(--transition-speed);
+}
+
+.logo img:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* 📋 Navigation */
+.nav-list {
+    flex: 2;
+    text-align: center;
+}
+
+.nav-list nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-list nav ul li {
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    transition: transform var(--transition-speed);
+}
+
+.nav-list nav ul li:hover {
+    transform: scale(1.1);
+}
+
+.nav-list nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color var(--transition-speed);
+}
+
+.nav-list nav ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+/* 🔑 Connexion */
+.connexion {
+    display: flex;
+    align-items: center;
+}
+
+.connexion p {
+    margin: 0 10px;
+    font-weight: bold;
+    color: black;
+    font-family: "Manrope", sans-serif;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.connexion p:hover {
+    background-color: rgba(58, 62, 62, 0.151);
+}
+
+.connexion button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 23px;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.connexion button:hover {
+    background-color: white;
+    border: 1px solid var(--hover-color);
+    color: var(--text-color);
+    transform: scale(1.05);
+    box-shadow: var(--box-shadow);
+}
+
+/* 🔍 Barre de recherche */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    background-color: white;
+    width: 50px;
+    transition: width var(--transition-speed);
+    overflow: hidden;
+}
+
+.search-input-wrapper:focus-within {
+    width: 100%;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    width: 0;
+    opacity: 0;
+    transition: width var(--transition-speed), opacity var(--transition-speed);
+}
+
+.search-input-wrapper:hover .search-input {
+    width: 100%;
+    opacity: 1;
+}
+
+.search-icon {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+.search-icon:hover {
+    animation: spinPulse 1s infinite;
+}
+
+/* 📚 Livres */
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.book {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    /* Animation de bascule 3D subtile */
+    transform-style: preserve-3d;
+}
+
+.book:hover {
+    transform: perspective(600px) rotateY(5deg) scale(1.05);
+    box-shadow: var(--box-shadow);
+}
+
+.book-title {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Bouton de vue avec gradient animé */
+.view-btn {
+    padding: 5px 10px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background-size: 200% 200%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-position var(--transition-speed);
+}
+
+.view-btn:hover {
+    background-position: right center;
+}
+
+/* Animations avancées */
+
+/* Animation de rotation pulsée pour l'icône de recherche */
+@keyframes spinPulse {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.2);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+/* Autres animations complexes peuvent être ajoutées ici... */

@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #008080;
+    /* Teal */
+    --secondary-color: #006666;
+    /* Dark Teal */
+    --background-color: #e0f7fa;
+    /* Light Cyan */
+    --text-color: #333;
+    /* Dark Gray */
+    --hover-color: #005959;
+    /* Darker Teal */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 10px 20px;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.header.scrolled {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo form {
+    margin: 0;
+}
+
+.btn-img-logo {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-img-logo img {
+    width: 60px;
+    transition: transform 0.3s;
+}
+
+.btn-img-logo img:hover {
+    transform: scale(1.1);
+}
+
+.nav-list {
+    flex: 2;
+    text-align: center;
+    margin-left: -20px;
+}
+
+.nav-list nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list nav ul li {
+    margin: 0 15px;
+}
+
+.nav-list nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.connexion {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.connexion p {
+    margin: 0 10px 0 0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.connexion p span {
+    margin-left: 10px;
+}
+
+.connexion form {
+    display: inline;
+}
+
+.connexion button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    margin-left: 60px;
+    transition: background-color 0.3s;
+}
+
+.connexion button:hover {
+    background-color: var(--hover-color);
+}
