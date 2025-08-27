@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS cookify;
+drop database if exists cookify ;
 CREATE DATABASE cookify;
 USE cookify;
 
