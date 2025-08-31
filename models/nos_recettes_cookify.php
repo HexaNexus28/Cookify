@@ -1,5 +1,5 @@
 <?php
-require './connexion.php';
+require 'connexion.php';
 /*Cette fonction affiche par rapport au type de catégories*/
 function afficher_plats_noms($type)
 {

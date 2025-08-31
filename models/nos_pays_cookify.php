@@ -1,5 +1,5 @@
 <?php
-require './connexion.php';
+require 'connexion.php';
 function afficher_pays()
 {
   global $db;

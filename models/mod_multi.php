@@ -1,5 +1,5 @@
 <?php
-require './connexion.php';
+require 'connexion.php';
 function generatecode()
 {
     $randomcode = "";

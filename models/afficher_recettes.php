@@ -1,5 +1,5 @@
 <?php
-require './connexion.php';
+require 'connexion.php';
 /*La première fonction permet d'afficher le plat et la description*/
 function afficherRecettes()
 {

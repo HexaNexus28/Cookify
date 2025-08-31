@@ -1,5 +1,5 @@
 <?php
-require './connexion.php';
+require 'connexion.php';
 function getfavoris($id_utilisateur, $table)
 {
     // Connexion à la base de données

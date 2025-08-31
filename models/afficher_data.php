@@ -1,5 +1,5 @@
 <?php
-require './connexion.php';
+require 'connexion.php';
 /*ici les deux premieres fonctions sont urilisées dans le controlleur afficher_cuisinotheque, le troisième dans afficher_livre  */
 function getdata()
 {

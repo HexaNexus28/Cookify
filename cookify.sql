@@ -1,6 +1,8 @@
-drop database if exists cookify ;
+
+drop database if exists cookify;
 CREATE DATABASE cookify;
 USE cookify;
+
 
 CREATE TABLE pays (
     id INT PRIMARY KEY AUTO_INCREMENT,

@@ -1,5 +1,5 @@
 <?php
-require './connexion.php';
+require 'connexion.php';
 function getdonnees($email, $mot_de_passe)
 {
     // Connexion à la base de données

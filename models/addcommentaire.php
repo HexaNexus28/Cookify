@@ -1,5 +1,5 @@
 <?php
-require './connexion.php';
+require 'connexion.php';
 function inserte_commentaire($id_recette, $id_utilisateur, $commentaire)
 {
     global $db;

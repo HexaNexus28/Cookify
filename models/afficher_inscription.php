@@ -1,5 +1,5 @@
 <?php
-require './connexion.php';
+require 'connexion.php';
 function insertdonnee($nom, $prenom, $email, $mot_de_passe)
 {
     global $db;

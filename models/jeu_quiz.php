@@ -1,5 +1,5 @@
 <?php
-require './connexion.php';
+require 'connexion.php';
 /*Fonction pour selectioner les catégories*/
 function afficher_categories_questions()
 {
